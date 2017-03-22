@@ -1,7 +1,7 @@
 /*jshint devel:true */
 
 function flyIt() {
-	var viewHeight = $(window).height();
+	var docHeight = $(document).height();
 	console.log("success!");
     $('#name-e').velocity({rotateZ: "-20deg", translateX: "-6.5px", translateY: "-3px"},
     	{
@@ -33,7 +33,7 @@ function flyIt() {
 	    	$('#title-d-two').velocity("reverse"); }  , 2200 );
 
 	setTimeout( function(){ 
-		$('#title-d').velocity({translateY: -viewHeight},
+		$('#title-d').velocity({translateY: -docHeight},
 	    	{
 	    	duration: 2000, 
 	    	easing: "easeOut" }); }  , 1200 );
@@ -44,7 +44,7 @@ $( document ).ready(function() {
 	$("body").emailSpamProtection("email");
 	setTimeout( function(){ 
     flyIt(); 
-  }  , 2000 );
+  }  , 1000 );
 });
 
 (function($) {
