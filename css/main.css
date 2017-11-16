@@ -38,7 +38,7 @@ body {
 
 #cont-header {
   background-color: white;
-  padding-top: 7vh;
+  padding-top: 10vh;
   padding-bottom: 3vh;
   text-align: center;
   padding-left: 0;
@@ -97,7 +97,11 @@ body {
   z-index: 1000; }
 
 #blight-logo {
-  border-radius: 30%; }
+  border-radius: 33%; }
+
+.linkedin-icon {
+  text-align: center;
+}
 
 #pstreet-logo {
   -webkit-filter: drop-shadow(0px 2px 5px #222);
